@@ -1,19 +1,13 @@
-const sumAll = function(minNum, maxNum) {
+const sumAll = function(start, end) {
 
-    let total = 0
+    let total = 0;
 
-    if (minNum >= 0 && maxNum >= 0) {
-         let total = sumAll(minNum, maxNum)
-         return total;
-
-    } else {
-        return "ERROR"
+    while (start >= 0 && end >= 0) {
+        total += start;
+        start += 1;
     }
 
-    // takes two numbers as a range
-    // returns an error if a number is negative
-    // adds all of the numbers between and incliding the two numbers given
-
+    return total;
 
 };
 

@@ -7,29 +7,32 @@
     <title>Document</title>
 
     <script>
-        const sumAll = function(minNum, maxNum) {
+        
 
-            let total = 0
+        const sumAll = function(start, end) {
 
-            while (minNum < maxNum) {
-                minNum += 1
-                console.log(minNum)
-                maxNum += 1
-                console.log(maxNum)
+            // range function that takes two arguments start and end
+            // and returns an array containing all of the numbers
+            // from start up to and including end
 
-                total += minNum + maxNum
+            let total = 0;
+
+            while (start <= end) {
+                total += start;
+                start += 1;
+
             }
 
             console.log(total)
-
-        // while minNum != maxNum minNum +=1
-
-    
+            
+            
+                // increase starting number by 1 until it equals the end number
         
-        // takes two numbers as a range
-        // returns an error if a number is negative
-        // adds all of the numbers between and incliding the two numbers given
 
+            
+
+        
+        
 
 };
 
