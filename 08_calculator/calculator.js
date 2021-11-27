@@ -1,25 +1,42 @@
-const add = function() {
-	
+// Computes the sum of two numbers.
+const add = function(num1, num2) {
+  return num1 + num2;	
 };
 
-const subtract = function() {
-	
+// Computes the difference of two numbers.
+const subtract = function(num1, num2) {
+  return num1 - num2;
 };
 
-const sum = function() {
-	
+// Computes the sum of numbers in an array.
+const sum = function(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum; 
 };
 
-const multiply = function() {
-
+// Multiplies numbers in an array.
+const multiply = function(arr) {
+  let total = 1;
+  for (let i = 0; i < arr.length; i++) {
+    total *= arr[i]
+  }
+  return total;
 };
 
-const power = function() {
-	
+// Raises one number to the power of another number.
+const power = function(num1, num2) { 
+  return Math.pow(num1, num2);
 };
 
-const factorial = function() {
-	
+// Computes the factorial of a number.
+const factorial = function(n) {
+	if ((n === 0 || n === 1))
+    return 1;
+  else
+    return (n * factorial(n - 1));
 };
 
 // Do not edit below this line
